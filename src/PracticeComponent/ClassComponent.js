@@ -14,18 +14,24 @@ class ClassComp extends React.Component {
   }
 
   handleIncrement = (event) => {
-    console.log('event..??', event);
-    console.log('event.target.value', event.target.value);
-    this.setState({
-      count: this.state.count + 1
-    })
+    // this.setState({
+    //   count: this.state.count + 1
+    // });
+    // this is another way using async
+    this.setState(prevState =>({
+      count:prevState.count+1
+    }));
   }
 
   handleDecrement = (event) => {
     console.log('event..??', event);
-    this.setState({
-      count: this.state.count - 1
-    })
+    // this.setState({
+    //   count: this.state.count - 1
+    // })
+    // another ways...
+    this.setState(prevState =>({
+      count:prevState.count-1
+    }));
   }
 
 

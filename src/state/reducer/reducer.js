@@ -1,6 +1,9 @@
-const reducer = (state = [],action)=>{
-    if(action.type === 'add'){
-        console.log('data has been added...???');
+const initialState = {
+    count:0
+}
+const reducer = (state = initialState,action)=>{
+    if(action.type === 'increment'){
+        return state;
     }
     return {
         name:"Abdul Kadir Khan",

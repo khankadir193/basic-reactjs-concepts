@@ -14,8 +14,8 @@ const CounterComp = () => {
     return (
         <div>
             <h1>{counter}</h1>
-            <button onClick={(event)=>{handleIncDec(event,"+")}}>+</button>
             <button onClick={(event)=>{handleIncDec(event,"-")}}>-</button>
+            <button onClick={(event)=>{handleIncDec(event,"+")}}>+</button>
         </div>
     )
 }
